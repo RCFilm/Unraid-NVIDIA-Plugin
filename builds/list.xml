@@ -6,123 +6,69 @@
     <IsTruncated>false</IsTruncated>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzfirmware</Key>
-        <LastModified>2018-09-15T22:28:59.136Z</LastModified>
-        <ETag>"94d32eb10fbab4cb24f41fa000d9d2d6"</ETag>
-        <Size>5009408</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzfirmware.md5</Key>
-        <LastModified>2018-09-15T22:29:00.276Z</LastModified>
-        <ETag>"e159c96e61c79e4a4ea19b3b97771076"</ETag>
-        <Size>45</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzimage</Key>
-        <LastModified>2018-09-15T22:28:59.102Z</LastModified>
-        <ETag>"9475c6c16f0f964d226375fbac9d0c3c"</ETag>
-        <Size>4493968</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzimage.md5</Key>
-        <LastModified>2018-09-15T22:28:59.125Z</LastModified>
-        <ETag>"2ba8947a210cbb52321c3530e6f392a8"</ETag>
-        <Size>42</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzmodules</Key>
-        <LastModified>2018-09-15T22:28:59.109Z</LastModified>
-        <ETag>"840b0b8f9aa1c11a62644d1d84438937"</ETag>
-        <Size>17006592</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzmodules.md5</Key>
-        <LastModified>2018-09-15T22:28:59.110Z</LastModified>
-        <ETag>"654d1f81af339bb1bb37ce2cb5b14b60"</ETag>
-        <Size>44</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzroot</Key>
-        <LastModified>2018-09-15T22:40:44.365Z</LastModified>
-        <ETag>"8d563592e9d2eb1739b28c6dd109a0e1"</ETag>
-        <Size>94468200</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzroot-gui</Key>
-        <LastModified>2018-09-15T22:32:04.914Z</LastModified>
-        <ETag>"6d109d4175f1d7a09fe9790ebf2f5da7"</ETag>
-        <Size>61579372</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzroot-gui.md5</Key>
-        <LastModified>2018-09-15T22:28:59.143Z</LastModified>
-        <ETag>"1e42711308ac004955924287510dd18f"</ETag>
-        <Size>45</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/bzroot.md5</Key>
-        <LastModified>2018-09-15T22:36:03.686Z</LastModified>
-        <ETag>"b5e9d024253a5218d6cfecf07d579a32"</ETag>
-        <Size>41</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
     </Contents>
     <Contents>
         <Key>unraid-nvidia/6-6-6/nvidia/unraid-media</Key>
-        <LastModified>2018-09-15T22:28:59.177Z</LastModified>
-        <ETag>"c0b94f47ae67683b2ff2b4ba949e7831"</ETag>
-        <Size>30</Size>
-        <StorageClass>STANDARD</StorageClass>
-        <Owner>
-            <ID>2113255</ID>
-            <DisplayName>2113255</DisplayName>
-        </Owner>
+    </Contents>
+
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzfirmware</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzfirmware.md5</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzimage</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzimage.md5</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzmodules</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzmodules.md5</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzroot</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzroot-gui</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzroot-gui.md5</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/bzroot.md5</Key>
+    </Contents>
+    <Contents>
+        <Key>unraid-nvidia/6-6-6/stock/unraid-media</Key>
     </Contents>
 </ListBucketResult>
