@@ -6,7 +6,7 @@
 <!ENTITY md5       "553a60575dab298a12fbb0d79624e99c">
 <!ENTITY launch    "Settings/UnraidNVIDIA">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
-<!ENTITY github    "CHBMB/Unraid-NVIDIA-Plugin">
+<!ENTITY github    "bassrock/Unraid-NVIDIA-Plugin">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
 ]>
 
