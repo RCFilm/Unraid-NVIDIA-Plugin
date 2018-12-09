@@ -2,8 +2,8 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "UnraidNVIDIA">
 <!ENTITY author    "LinuxServer.io">
-<!ENTITY version   "2018.09.16g">
-<!ENTITY md5       "553a60575dab298a12fbb0d79624e99c">
+<!ENTITY version   "2018.12.09">
+<!ENTITY md5       "e7dbac1dbcf31c732e41d9fdbdf90de6">
 <!ENTITY launch    "Settings/UnraidNVIDIA">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "bassrock/Unraid-NVIDIA-Plugin">
