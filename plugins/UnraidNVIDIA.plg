@@ -2,8 +2,8 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "UnraidNVIDIA">
 <!ENTITY author    "LinuxServer.io">
-<!ENTITY version   "2018.12.16">
-<!ENTITY md5       "34b56f91ed8f4b7e1d9294a133b69cf2">
+<!ENTITY version   "2018.12.16a">
+<!ENTITY md5       "4e16e14863ac3acb51a07e4e22e90ebc">
 <!ENTITY launch    "Settings/UnraidNVIDIA">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "bassrock/Unraid-NVIDIA-Plugin">
@@ -53,7 +53,7 @@ rm -rf /tmp/mediabuild
     <MD5>7fcf24f105afc9e38f4cadfb03fa0bf9</MD5>
 </FILE>
 
-<FILE Name="&plugin;/packages/runc-1.0.0_rc5-x86_64-1_SBo" Run="/sbin/upgradepkg --install-new">
+<FILE Name="&plugin;/packages/runc-1.0.0_rc5-x86_64-1_SBo.tgz" Run="/sbin/upgradepkg --install-new">
     <URL>&repo;/packages/runc-1.0.0_rc5-x86_64-1_SBo.tgz</URL>
     <MD5>efc2b8be8cdb604f8338b96c6af19636</MD5>
 </FILE>
