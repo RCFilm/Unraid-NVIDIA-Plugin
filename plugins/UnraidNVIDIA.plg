@@ -7,7 +7,9 @@
 <!ENTITY launch    "Settings/UnraidNVIDIA">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "bassrock/Unraid-NVIDIA-Plugin">
-<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
+<!ENTITY plugin "/boot/config/plugins/&name;">
+<!ENTITY repo "https://raw.githubusercontent.com/&github;/master">
+<!ENTITY pluginURL "&repo;/plugins/&name;.plg">
 ]>
 
 <PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;">
@@ -46,6 +48,38 @@ rm -rf /tmp/mediabuild
 </INLINE>
 </FILE>
 
+<FILE Name="&plugin;/packages/libseccomp-2.3.3-x86_64-1_SBo.tgz" Run="/sbin/upgradepkg --install-new">
+    <URL>&repo;/packages/libseccomp-2.3.3-x86_64-1_SBo.tgz</URL>
+    <MD5>7fcf24f105afc9e38f4cadfb03fa0bf9</MD5>
+</FILE>
+
+<FILE Name="&plugin;/packages/runc-1.0.0_rc5-x86_64-1_SBo" Run="/sbin/upgradepkg --install-new">
+    <URL>&repo;/packages/runc-1.0.0_rc5-x86_64-1_SBo.tgz</URL>
+    <MD5>efc2b8be8cdb604f8338b96c6af19636</MD5>
+</FILE>
+
+<FILE Name="&plugin;/packages/nvidia-kernel-410.73_4.18.20_unRAID-x86_64-1_SBo.tgz" Run="/sbin/upgradepkg --install-new">
+    <URL>&repo;/packages/nvidia-kernel-410.73_4.18.20_unRAID-x86_64-1_SBo.tgz</URL>
+    <MD5>380c79d65b74ffe6546c9668d7d6c4d6</MD5>
+</FILE>
+
+<FILE Name="&plugin;/packages/nvidia-driver-410.73-x86_64-1_SBo.tgz" Run="/sbin/upgradepkg --install-new">
+    <URL>&repo;/packages/nvidia-driver-410.73-x86_64-1_SBo.tgz</URL>
+    <MD5>3b9c5d43bd38425b3ea585c951cf7c77</MD5>
+</FILE>
+
+<FILE Name="/etc/docker/daemon.json">
+    <URL>https://raw.githubusercontent.com/CHBMB/Unraid-NVIDIA/master/files/daemon.json</URL>
+</FILE>
+
+<FILE Name="/usr/bin/nvidia-container-runtime-hook">
+    <URL>https://github.com/NVIDIA/nvidia-container-runtime/releases/download/v1.4.0-1/nvidia-container-runtime-hook.amd64</URL>
+</FILE>
+
+
+<FILE Name="&plugin;/packages/libnvidia-container_1.0.0_x86_64.tar.xz">
+    <URL>https://github.com/NVIDIA/libnvidia-container/releases/download/v1.0.0/libnvidia-container_1.0.0_x86_64.tar.xz</URL>
+</FILE>
 <!--
 The 'source' file.
 -->
@@ -64,6 +98,13 @@ if [ -d /dev/dri ]; then
     chown -R nobody:users /dev/dri
     chmod -R 777 /dev/dri
 fi
+
+ln -sf /usr/bin/runc /usr/bin/nvidia-container-runtime
+chmod +x /usr/bin/nvidia-container-runtime-hook
+cd /boot/config/plugins/&name;/packages
+tar --strip-components=1 -C / -xvf libnvidia-container_1.0.0_x86_64.tar.xz
+echo "/usr/local/lib" >> /etc/ld.so.conf
+ldconfig
 
 # Parse Nvidia Details
 
