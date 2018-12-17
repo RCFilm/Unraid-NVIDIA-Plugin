@@ -58,14 +58,14 @@ rm -rf /tmp/mediabuild
     <MD5>efc2b8be8cdb604f8338b96c6af19636</MD5>
 </FILE>
 
-<FILE Name="&plugin;/packages/nvidia-kernel-410.73_4.18.20_unRAID-x86_64-1_SBo.tgz" Run="/sbin/upgradepkg --install-new">
-    <URL>&repo;/packages/nvidia-kernel-410.73_4.18.20_unRAID-x86_64-1_SBo.tgz</URL>
-    <MD5>380c79d65b74ffe6546c9668d7d6c4d6</MD5>
+<FILE Name="&plugin;/packages/nvidia-kernel-410.78_4.18.20_unRAID-x86_64-1_SBo.tgz" Run="/sbin/upgradepkg --install-new">
+    <URL>&repo;/packages/nvidia-kernel-410.78_4.18.20_unRAID-x86_64-1_SBo.tgz</URL>
+    <MD5>ff2251cdfcb848059723f956a307a3da</MD5>
 </FILE>
 
-<FILE Name="&plugin;/packages/nvidia-driver-410.73-x86_64-1_SBo.tgz" Run="/sbin/upgradepkg --install-new">
-    <URL>&repo;/packages/nvidia-driver-410.73-x86_64-1_SBo.tgz</URL>
-    <MD5>3b9c5d43bd38425b3ea585c951cf7c77</MD5>
+<FILE Name="&plugin;/packages/nvidia-driver-410.78-x86_64-1_SBo.tgz" Run="/sbin/upgradepkg --install-new">
+    <URL>&repo;/packages/nvidia-driver-410.78-x86_64-1_SBo.tgz</URL>
+    <MD5>f0bfb38a4803afac76d19f85b39d7c7c</MD5>
 </FILE>
 
 <FILE Name="/etc/docker/daemon.json">
