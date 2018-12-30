@@ -6,9 +6,9 @@
 <!ENTITY md5       "5fd1185309285b079911d536211bb55e">
 <!ENTITY launch    "Settings/UnraidNVIDIA">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
-<!ENTITY github    "bassrock/Unraid-NVIDIA-Plugin">
+<!ENTITY github    "CHBMB/Unraid-NVIDIA-Plugin">
 <!ENTITY plugin "/boot/config/plugins/&name;">
-<!ENTITY repo "https://raw.githubusercontent.com/&github;/master">
+<!ENTITY repo "https://raw.githubusercontent.com/&github;bassrock-testing">
 <!ENTITY pluginURL "&repo;/plugins/&name;.plg">
 ]>
 
@@ -69,7 +69,7 @@ rm -rf /tmp/mediabuild
 </FILE>
 
 <FILE Name="/etc/docker/daemon.json">
-    <URL>https://raw.githubusercontent.com/CHBMB/Unraid-NVIDIA/master/files/daemon.json</URL>
+    <URL>https://raw.githubusercontent.com/CHBMB/Unraid-NVIDIA/bassrock-testing/files/daemon.json</URL>
 </FILE>
 
 <FILE Name="/usr/bin/nvidia-container-runtime-hook">
@@ -84,7 +84,7 @@ rm -rf /tmp/mediabuild
 The 'source' file.
 -->
 <FILE Name="/boot/config/plugins/&name;/&name;-&version;.txz" Run="upgradepkg --install-new">
-<URL>https://raw.github.com/&github;/master/archive/&name;-&version;.txz</URL>
+<URL>https://raw.github.com/&github;/bassrock-testing/archive/&name;-&version;.txz</URL>
 <MD5>&md5;</MD5>
 </FILE>
 
