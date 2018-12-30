@@ -42,7 +42,7 @@ case 'build_buttons':
 
   @unlink($tempFile);
 
-$xmlRaw = file_get_contents("https://raw.githubusercontent.com/bassrock/Unraid-NVIDIA-Plugin/master/builds/list.xml");
+$xmlRaw = file_get_contents("https://raw.githubusercontent.com/CHBMB/Unraid-NVIDIA-Plugin/bassrock-testing/builds/list.xml");
 $o = TypeConverter::xmlToArray($xmlRaw,TypeConverter::XML_GROUP);
 foreach ($o['Contents'] as $test) {
     $folder[dirname($test['Key'])] = true;
@@ -53,7 +53,7 @@ foreach (array_keys($folder) as $path) {
 	$imageType = basename($path);
 	if ( !$types[$imageType] ) { continue; }
 	$tmpArray['imageType'] = $types[$imageType];
-	$tmpArray['imageURL'] = "https://raw.githubusercontent.com/bassrock/Unraid-NVIDIA-Plugin/master/builds/$path";
+	$tmpArray['imageURL'] = "https://raw.githubusercontent.com/CHBMB/Unraid-NVIDIA-Plugin/bassrock-testing/builds/$path";
 	$tmpArray['imageVersion'] = str_replace("-",".",basename(dirname($path)));
 	if ( ! strpos($tmpArray['imageURL'],"stock") ) {
 		download_url($tmpArray['imageURL']."/unraid-media",$description);
